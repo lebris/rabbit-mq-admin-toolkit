@@ -12,7 +12,7 @@ use Bab\RabbitMq\Command\MessageMoveCommand;
 use Bab\RabbitMq\Command\MessageSenderCommand;
 use Symfony\Component\Console\Application;
 
-$application = new Application();
+$application = new Application('RabbitMQ admin toolkit', 'dev-master');
 
 $application->add(new VhostMappingCreateCommand());
 $application->add(new MessageGetCommand());

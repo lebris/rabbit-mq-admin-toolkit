@@ -1,0 +1,20 @@
+{
+    "output": "rabbit.phar",
+    "chmod": "0755",
+    "main": "rabbit",
+     "compactors": [
+        "Herrera\\Box\\Compactor\\Php"
+    ],
+    "extract": false,
+    "directories": [
+        "src"
+    ],
+    "finder": [
+        {
+            "name": "*.*",
+            "exclude": ["Tests"],
+            "in": "vendor"
+        }
+    ],
+    "stub": true
+}
